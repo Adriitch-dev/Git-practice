@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Registro | Ferretería Don Toño</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style/style.css">
+
+    <!-- Bootstrap -->
+    <link 
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" 
+        rel="stylesheet"
+    >
+
+</head>
+
+<body>
+
+    <main class="contenedorlogin">
+
+        <!-- FORMULARIO -->
+        <form 
+            class="form"
+            method="POST"
+            action="php/register.php"
+        >
+
+            <h1 class="mb-4 text-center">
+
+                Crea una cuenta en la Ferretería Don Toño
+
+            </h1>
+
+            <!-- NOMBRE -->
+            <div class="inputsblock mb-3">
+
+                <label for="nombre" class="form-label">
+
+                    Nombre completo
+
+                </label>
+
+                <input 
+                    type="text"
+                    class="form-control"
+                    id="nombre"
+                    placeholder="Nombre Apellido"
+                    name="nombre"
+                    required
+                >
+
+            </div>
+
+            <!-- EMAIL -->
+            <div class="inputsblock mb-3">
+
+                <label for="correo" class="form-label">
+
+                    Correo electrónico
+
+                </label>
+
+                <input 
+                    type="email"
+                    class="form-control"
+                    id="correo"
+                    placeholder="name@example.com"
+                    name="correo"
+                    required
+                >
+
+            </div>
+
+            <!-- PASSWORD -->
+            <div class="inputsblock mb-4">
+
+                <label for="password" class="form-label">
+
+                    Contraseña
+
+                </label>
+
+                <input 
+                    type="password"
+                    class="form-control"
+                    id="password"
+                    placeholder="Password"
+                    name="password"
+                    required
+                >
+
+            </div>
+
+            <!-- BOTÓN -->
+            <div class="d-grid">
+
+                <button 
+                    class="btn btn-primary py-2"
+                    type="submit"
+                >
+
+                    Registrarse
+
+                </button>
+
+            </div>
+
+            <!-- FOOTER -->
+            <p class="mt-4 text-center text-body-secondary">
+
+                © 2025 Ferretería Don Toño
+
+            </p>
+
+        </form>
+
+    </main>
+
+</body>
+</html>
